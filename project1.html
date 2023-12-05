@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>project1</title>
+  <style>
+  .bag-button{
+    background-color:rgb(1, 243, 1) ;
+    border:none;
+    padding: 5px 15px;
+    border-radius:10px ;
+    text-transform: uppercase;
+
+  }
+  .wishlist{
+       padding: 5px 35px;
+       border:2px solid black;
+       text-transform: uppercase;
+       border-radius:10px ;
+  }
+  </style>
+</head>
+<body>
+  <h1>project for java Script</h1>
+
+  <button class="bag-button" onclick="cartQuantity=cartQuantity+1;
+   document.querySelector('#card-summary').innerText='your bag has ${cartQuantity} iteams';">Add to bag</button>
+
+  <button class="wishlist" onclick="alert('iteam has add to wishlist');">Move to wishlist</button>
+  
+ <button class="bag-button" onclick="alert('iteam has add to bag');">Add 1+1 seleiteams</button>
+
+ <h1 id="card-summary">your bag has 0 items</h1>
+
+ <script>
+ let cartQuantity=0;
+ document.querySelector('#card-summary').innerText='your bag has ${cartQuantity} iteams';
+ 
+ </script>
+</body>
+</html>
